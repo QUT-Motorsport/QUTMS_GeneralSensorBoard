@@ -1,0 +1,12 @@
+Added Component: Designator=L?(Inductor_6x6mm)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/w%C3%BCrth-elektronik/74404064221/732-7261-1-ND/5353241"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "LCSC A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://lcsc.com/product-detail/Power-Inductors_Sunlord-SWPA6045S221MT_C91047.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "LCSC B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://lcsc.com/product-detail/Power-Inductors_SXN-Shun-Xiang-Nuo-Elec-SMNR6045-221MT_C467145.html"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3 Pin=L?-1
+Added Pin To Net: NetName=NetCx1_2 Pin=L?-2
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C? 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C? 10nF 50V 20% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component L? 74404064221

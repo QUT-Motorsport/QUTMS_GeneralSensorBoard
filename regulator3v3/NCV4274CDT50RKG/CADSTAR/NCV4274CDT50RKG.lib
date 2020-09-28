@@ -1,0 +1,17 @@
+.NCV4274CDT50RKG :1 ;ON SEMICONDUCTOR - NCV4274CDT50RKG - LDO, AEC-Q100, FIXED, 5V, 0.4A, TO-252-3
+NCV4274CDT50RKG
+*STM IC
+*NGS
+*PLB 1="INPUT" 2="GND" 3="OUTPUT"
+*MXP 3
+*DFN NCV4274CDT50RKG
+~!Manufacturer_Name (ON Semiconductor)
+~!Manufacturer_Part_Number (NCV4274CDT50RKG)
+~!Arrow Part Number (NCV4274CDT50RKG)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/ncv4274cdt50rkg/on-semiconductor)
+~!Mouser Part Number (863-NCV4274CDT50RKG)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NCV4274CDT50RKG?qs=tCMd4XlZ%2FiBk5MdmOBr7cw%3D%3D)
+~!Link Datasheet (https://www.onsemi.com/pub/Collateral/NCV4274C-D.PDF)
+~!Height (2.38mm)
+NCV4274CDT50RKG
+1.1!U 2.1!U 3.1!U 

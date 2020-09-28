@@ -1,0 +1,8 @@
+Change Component Comment: Designator=J5 Old Comment=0436500400 New Comment=Power - CAN
+Change Component Comment: Designator=J2 Old Comment=0436500400 New Comment=Sensor1
+Change Component Comment: Designator=J3 Old Comment=0436500400 New Comment=Sensor2
+Change Component Comment: Designator=J4 Old Comment=0436500400 New Comment=Sensor3
+Change Component Comment: Designator=J7 Old Comment=Jumper 2Way Pins New Comment=I2C
+Change Component Comment: Designator=J6 Old Comment=Jumper 3Way Pins New Comment=USART
+Change Component Comment: Designator=IC1 Old Comment=NCV4274CDT50RKG New Comment=3V3 LDO
+Change Component Comment: Designator=IC2 Old Comment=NCV4274CDT50RKG New Comment=5V LDO

@@ -1,0 +1,9 @@
+Manufacturer=ON Semiconductor
+PartNumber=NCV4274CDT50RKG
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=3
+Version=1.1
+Released=2019-08-02 13:39:41
+Downloaded=2020-09-25 23:19:12
+3D=N

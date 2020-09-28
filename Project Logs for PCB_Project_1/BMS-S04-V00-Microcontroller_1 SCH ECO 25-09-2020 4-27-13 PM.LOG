@@ -1,0 +1,27 @@
+Replace Part C1 100nF 50V 5% X7R 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 100nF 50V 5% X7R 0603 from StandardCapacitors.SchLib
+Replace Part C2 4u7 50V 5% X7R 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 4u7 50V 5% X7R 0603 from StandardCapacitors.SchLib
+Replace Part C3 100nF 50V 5% X7R 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 100nF 50V 5% X7R 0603 from StandardCapacitors.SchLib
+Replace Part C4 4u7 50V 5% X7R 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 4u7 50V 5% X7R 0603 from StandardCapacitors.SchLib
+Replace Part C5 100nF 50V 5% X7R 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 100nF 50V 5% X7R 0603 from StandardCapacitors.SchLib
+Replace Part C6 4u7 50V 5% X7R 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 4u7 50V 5% X7R 0603 from StandardCapacitors.SchLib
+Replace Part C7 100nF 50V 5% X7R 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 100nF 50V 5% X7R 0603 from StandardCapacitors.SchLib
+Replace Part C8 100nF 50V 5% X7R 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 100nF 50V 5% X7R 0603 from StandardCapacitors.SchLib
+Replace Part C9 10nF 50V 20% X7R 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 10nF 50V 20% X7R 0603 from StandardCapacitors.SchLib
+Replace Part C10 10nF 50V 20% X7R 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 10nF 50V 20% X7R 0603 from StandardCapacitors.SchLib
+Replace Part C11 100nF 50V 5% X7R 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 100nF 50V 5% X7R 0603 from StandardCapacitors.SchLib
+Replace Part Cx1 100nF 50V 5% X7R 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 100nF 50V 5% X7R 0603 from StandardCapacitors.SchLib
+Replace Part D1 ESD9B3.3ST5G in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with ESD9B3.3ST5G from QUTMS_DiodeLibrary.SchLib
+Replace Part DS1 LED Orange 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with LED Orange 0603 from QUTMS_LEDLibrary.SchLib
+Replace Part DS2 LED Orange 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with LED Orange 0603 from QUTMS_LEDLibrary.SchLib
+Replace Part J1 IDC 10P 2x5 1.27mm in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with IDC 10P 2x5 1.27mm from IDCConnectors.SchLib
+Replace Part J2 0436500400 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 0436500400 from 0436500400.SchLib
+Replace Part L1 74404064221 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 74404064221 from QUTMS_InductorLibrary.SchLib
+Replace Part P1 Header 3 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with Header 3 from Miscellaneous Connectors.IntLib
+Replace Part R1 2k2 5% 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 2k2 5% 0603 from StandardResistors.SchLib
+Replace Part R2 2k2 5% 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 2k2 5% 0603 from StandardResistors.SchLib
+Replace Part R3 4k7 5% 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 4k7 5% 0603 from StandardResistors.SchLib
+Replace Part R4 330R 5% 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 330R 5% 0603 from StandardResistors.SchLib
+Replace Part R5 330R 5% 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 330R 5% 0603 from StandardResistors.SchLib
+Replace Part R6 10k 1% 0603 in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with 10k 1% 0603 from StandardResistors.SchLib
+Replace Part SW1 BTN B3U-1000P in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with BTN B3U-1000P from QUTMS_SwitchLibrary.SchLib
+Replace Part U2 DSC1001DI1-008.0000T in D:\Altium\AltiumDocumentsFolder\PCB_Project_1\BMS-S04-V00-Microcontroller_1.SchDoc with DSC1001DI1-008.0000T from QUTMS_CrystalLibrary.SchLib

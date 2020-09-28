@@ -1,0 +1,317 @@
+Added Component: Designator=C1(Cap_Ceramic_0603)
+Added Component: Designator=C2(Cap_Ceramic_0603)
+Added Component: Designator=C3(Cap_Ceramic_0603)
+Added Component: Designator=C4(Cap_Ceramic_0603)
+Added Component: Designator=C5(Cap_Ceramic_0603)
+Added Component: Designator=C6(Cap_Ceramic_0603)
+Added Component: Designator=C7(Cap_Ceramic_0603)
+Added Component: Designator=C8(Cap_Ceramic_0603)
+Added Component: Designator=C9(Cap_Ceramic_0603)
+Added Component: Designator=C10(Cap_Ceramic_0603)
+Added Component: Designator=C11_U_GSB-S04-SensorMicrofit1(Cap_Ceramic_0603)
+Added Component: Designator=C11_U_GSB-S04-SensorMicrofit2(Cap_Ceramic_0603)
+Added Component: Designator=C11_U_GSB-S04-SensorMicrofit3(Cap_Ceramic_0603)
+Added Component: Designator=C12(Cap_Ceramic_0603)
+Added Component: Designator=C13(Cap_Ceramic_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/kemet/C0603C103M5RACTU/399-7842-1-ND/3471565"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=C14(Cap_Ceramic_0603)
+Added Component: Designator=C15(Cap_Ceramic_1206)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/tdk-corporation/C3216X5R1V226M160AC/445-8045-1-ND/2792165"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=D1(NUP2105L)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.onsemi.cn/PowerSolutions/document/NUP2105L-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://lcsc.com/product-detail/TVS_ON-Semiconductor-NUP2105LT1G_C14486.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.digikey.com.au/product-detail/en/on-semiconductor/SZNUP2105LT1G/SZNUP2105LT1GOSCT-ND/3487669"; VariantName = "[No Variations]"
+Added Component: Designator=D2_U_GSB-S04-SensorMicrofit1(SOD-923)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/on-semiconductor/ESD9B3.3ST5G/ESD9B3.3ST5GOSCT-ND/2704995"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.onsemi.cn/pub/Collateral/ESD9B-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ESD9B3.3ST5G"; VariantName = "[No Variations]"
+Added Component: Designator=D2_U_GSB-S04-SensorMicrofit2(SOD-923)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/on-semiconductor/ESD9B3.3ST5G/ESD9B3.3ST5GOSCT-ND/2704995"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.onsemi.cn/pub/Collateral/ESD9B-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ESD9B3.3ST5G"; VariantName = "[No Variations]"
+Added Component: Designator=D2_U_GSB-S04-SensorMicrofit3(SOD-923)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/on-semiconductor/ESD9B3.3ST5G/ESD9B3.3ST5GOSCT-ND/2704995"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.onsemi.cn/pub/Collateral/ESD9B-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ESD9B3.3ST5G"; VariantName = "[No Variations]"
+Added Component: Designator=DS1(LED ORANGE 0603)
+Added Component: Designator=DS2(LED ORANGE 0603)
+Added Component: Designator=DS3(LED BLUE 0603)
+Added Component: Designator=DS4(LED BLUE 0603)
+Added Component: Designator=J1(Jumper_3Way_Pin)
+Added Component: Designator=J2(IDC 1.27MM 10P)
+Added Component: Designator=J3(Jumper_2Way_Pin)
+Added Component: Designator=J4(Jumper_2Way_Pin)
+Added Component: Designator=J5(Jumper_2Way_Pin)
+Added Component: Designator=J8_U_GSB-S07-V00-SPImicrofit1(Microfit_2X3_R_TH)
+Added Component: Designator=J8_U_GSB-S07-V00-SPImicrofit2(Microfit_2X3_R_TH)
+Added Component: Designator=J9(Microfit_2X2_R_TH)
+Added Component: Designator=L1(Inductor_6x6mm)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/w%C3%BCrth-elektronik/74404064221/732-7261-1-ND/5353241"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "LCSC A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://lcsc.com/product-detail/Power-Inductors_Sunlord-SWPA6045S221MT_C91047.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "LCSC B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://lcsc.com/product-detail/Power-Inductors_SXN-Shun-Xiang-Nuo-Elec-SMNR6045-221MT_C467145.html"; VariantName = "[No Variations]"
+Added Component: Designator=R1(Res_ThinFilm_0603)
+Added Component: Designator=R2(Res_ThinFilm_0603)
+Added Component: Designator=R3(Res_ThinFilm_0603)
+Added Component: Designator=R4(Res_ThinFilm_0603)
+Added Component: Designator=R5(Res_ThinFilm_0603)
+Added Component: Designator=R6(Res_ThinFilm_0603)
+Added Component: Designator=R7(Res_ThinFilm_0603)
+Added Component: Designator=R8(Res_ThinFilm_0603)
+Added Component: Designator=R9(Res_ThinFilm_1210)
+Added Component: Designator=R10_U_GSB-S04-SensorMicrofit1(Res_ThinFilm_0603)
+Added Component: Designator=R10_U_GSB-S04-SensorMicrofit2(Res_ThinFilm_0603)
+Added Component: Designator=R10_U_GSB-S04-SensorMicrofit3(Res_ThinFilm_0603)
+Added Component: Designator=SW1(BTN B3U-1000P)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://lcsc.com/product-detail/Tactile-Switches_BRIGHT-TSA063G50-250_C294565.html"; VariantName = "[No Variations]"
+Added Component: Designator=TP1(TestPointSMD)
+Added Component: Designator=TP2(TestPointSMD)
+Added Component: Designator=TP3(TestPointSMD)
+Added Component: Designator=TP4(TestPointSMD)
+Added Component: Designator=U1(STM32F042C6)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/stmicroelectronics/STM32F042C6T6TR/497-19319-1-ND/10063344"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.st.com/resource/en/datasheet/stm32f042k6.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=U2(DSC1001DI1-008.0000TCT-ND)
+Added Component: Designator=U3(SN65HVD233DR)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://lcsc.com/product-detail/CAN-ICs_Texas-Instruments_SN65HVD233DRG4_Texas-Instruments-Texas-Instruments-SN65HVD233DRG4_C61643.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com.au/product-detail/en/texas-instruments/SN65HVD233DR/296-35967-1-ND/4134960"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.ti.com/lit/ds/symlink/sn65hvd233.pdf?ts=1588560888178"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Ti Product Page"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://www.ti.com/product/SN65HVD233"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=3V3 Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=3V3 Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=3V3 Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=3V3 Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=3V3 Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=3V3 Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=3V3 Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=NRST Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=3V3 Pin=C10-2
+Added Pin To Net: NetName=GND Pin=C11_U_GSB-S04-SensorMicrofit1-1
+Added Pin To Net: NetName=GND Pin=C11_U_GSB-S04-SensorMicrofit2-1
+Added Pin To Net: NetName=GND Pin=C11_U_GSB-S04-SensorMicrofit3-1
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=12V Pin=C12-2
+Added Pin To Net: NetName=GND Pin=C13-1
+Added Pin To Net: NetName=3V3 Pin=C13-2
+Added Pin To Net: NetName=GND Pin=C14-1
+Added Pin To Net: NetName=12V Pin=C14-2
+Added Pin To Net: NetName=GND Pin=C15-1
+Added Pin To Net: NetName=5V Pin=C15-2
+Added Pin To Net: NetName=GND Pin=D1-3
+Added Pin To Net: NetName=GND Pin=D2_U_GSB-S04-SensorMicrofit1-1
+Added Pin To Net: NetName=GND Pin=D2_U_GSB-S04-SensorMicrofit2-1
+Added Pin To Net: NetName=GND Pin=D2_U_GSB-S04-SensorMicrofit3-1
+Added Pin To Net: NetName=NetDS1_1 Pin=DS1-1
+Added Pin To Net: NetName=LED0 Pin=DS1-2
+Added Pin To Net: NetName=NetDS2_1 Pin=DS2-1
+Added Pin To Net: NetName=LED1 Pin=DS2-2
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=USART1 RX Pin=J1-2
+Added Pin To Net: NetName=USART1 TX Pin=J1-3
+Added Pin To Net: NetName=3V3 Pin=J2-1
+Added Pin To Net: NetName=SWDIO Pin=J2-2
+Added Pin To Net: NetName=GND Pin=J2-3
+Added Pin To Net: NetName=SWCLK Pin=J2-4
+Added Pin To Net: NetName=GND Pin=J2-5
+Added Pin To Net: NetName=GND Pin=J2-9
+Added Pin To Net: NetName=NRST Pin=J2-10
+Added Pin To Net: NetName=3V3 Pin=J3-1
+Added Pin To Net: NetName=3V3 Pin=J5-1
+Added Pin To Net: NetName=3V3 Pin=J8_U_GSB-S07-V00-SPImicrofit1-1
+Added Pin To Net: NetName=GND Pin=J8_U_GSB-S07-V00-SPImicrofit1-4
+Added Pin To Net: NetName=3V3 Pin=J8_U_GSB-S07-V00-SPImicrofit2-1
+Added Pin To Net: NetName=GND Pin=J8_U_GSB-S07-V00-SPImicrofit2-4
+Added Pin To Net: NetName=3V3 Pin=J9-1
+Added Pin To Net: NetName=I2C1 SCL Pin=J9-2
+Added Pin To Net: NetName=GND Pin=J9-3
+Added Pin To Net: NetName=I2C1 SDA Pin=J9-4
+Added Pin To Net: NetName=3V3 Pin=L1-1
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=I2C1 SCL Pin=R2-1
+Added Pin To Net: NetName=3V3 Pin=R2-2
+Added Pin To Net: NetName=I2C1 SDA Pin=R3-1
+Added Pin To Net: NetName=3V3 Pin=R3-2
+Added Pin To Net: NetName=NetDS1_1 Pin=R4-1
+Added Pin To Net: NetName=3V3 Pin=R4-2
+Added Pin To Net: NetName=NRST Pin=R5-1
+Added Pin To Net: NetName=3V3 Pin=R5-2
+Added Pin To Net: NetName=NetDS2_1 Pin=R6-1
+Added Pin To Net: NetName=3V3 Pin=R6-2
+Added Pin To Net: NetName=GND Pin=SW1-1
+Added Pin To Net: NetName=NRST Pin=SW1-2
+Added Pin To Net: NetName=3V3 Pin=U1-1
+Added Pin To Net: NetName=OSC IN Pin=U1-5
+Added Pin To Net: NetName=GND Pin=U1-6
+Added Pin To Net: NetName=NRST Pin=U1-7
+Added Pin To Net: NetName=GND Pin=U1-8
+Added Pin To Net: NetName=LED1 Pin=U1-21
+Added Pin To Net: NetName=GND Pin=U1-23
+Added Pin To Net: NetName=3V3 Pin=U1-24
+Added Pin To Net: NetName=USART1 TX Pin=U1-30
+Added Pin To Net: NetName=USART1 RX Pin=U1-31
+Added Pin To Net: NetName=SWDIO Pin=U1-34
+Added Pin To Net: NetName=GND Pin=U1-35
+Added Pin To Net: NetName=3V3 Pin=U1-36
+Added Pin To Net: NetName=SWCLK Pin=U1-37
+Added Pin To Net: NetName=I2C1 SCL Pin=U1-42
+Added Pin To Net: NetName=I2C1 SDA Pin=U1-43
+Added Pin To Net: NetName=LED0 Pin=U1-46
+Added Pin To Net: NetName=GND Pin=U1-47
+Added Pin To Net: NetName=3V3 Pin=U1-48
+Added Pin To Net: NetName=3V3 Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=OSC IN Pin=U2-3
+Added Pin To Net: NetName=3V3 Pin=U2-4
+Added Pin To Net: NetName=GND Pin=U3-2
+Added Pin To Net: NetName=3V3 Pin=U3-3
+Added Pin To Net: NetName=GND Pin=U3-8
+Added Pin To Net: NetName=CAN3H Pin=D1-2
+Added Pin To Net: NetName=CAN3H Pin=J4-1
+Added Pin To Net: NetName=CAN3H Pin=TP1-1
+Added Pin To Net: NetName=CAN3H Pin=U3-7
+Added Net: Name=CAN3H
+Added Pin To Net: NetName=CAN3 LED Pin=DS3-1
+Added Pin To Net: NetName=CAN3 LED Pin=DS4-1
+Added Pin To Net: NetName=CAN3 LED Pin=J3-2
+Added Net: Name=CAN3 LED
+Added Pin To Net: NetName=CAN3L Pin=D1-1
+Added Pin To Net: NetName=CAN3L Pin=R9-1
+Added Pin To Net: NetName=CAN3L Pin=TP3-1
+Added Pin To Net: NetName=CAN3L Pin=U3-6
+Added Net: Name=CAN3L
+Added Pin To Net: NetName=CAN3 RX LED Pin=DS4-2
+Added Pin To Net: NetName=CAN3 RX LED Pin=R8-2
+Added Net: Name=CAN3 RX LED
+Added Pin To Net: NetName=CAN3 RX Pin=R8-1
+Added Pin To Net: NetName=CAN3 RX Pin=TP4-1
+Added Pin To Net: NetName=CAN3 RX Pin=U1-33
+Added Pin To Net: NetName=CAN3 RX Pin=U3-4
+Added Net: Name=CAN3 RX
+Added Pin To Net: NetName=CAN3 TX LED Pin=DS3-2
+Added Pin To Net: NetName=CAN3 TX LED Pin=R7-2
+Added Net: Name=CAN3 TX LED
+Added Pin To Net: NetName=CAN3 TX Pin=R7-1
+Added Pin To Net: NetName=CAN3 TX Pin=TP2-1
+Added Pin To Net: NetName=CAN3 TX Pin=U1-32
+Added Pin To Net: NetName=CAN3 TX Pin=U3-1
+Added Net: Name=CAN3 TX
+Added Pin To Net: NetName=CAN LBK Pin=J5-2
+Added Pin To Net: NetName=CAN LBK Pin=U3-5
+Added Net: Name=CAN LBK
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=NetC1_2 Pin=L1-2
+Added Pin To Net: NetName=NetC1_2 Pin=U1-9
+Added Net: Name=NetC1_2
+Added Pin To Net: NetName=NetD2_U_GSB-S04-SensorMicrofit1_2 Pin=D2_U_GSB-S04-SensorMicrofit1-2
+Added Pin To Net: NetName=NetD2_U_GSB-S04-SensorMicrofit1_2 Pin=R10_U_GSB-S04-SensorMicrofit1-2
+Added Net: Name=NetD2_U_GSB-S04-SensorMicrofit1_2
+Added Pin To Net: NetName=NetD2_U_GSB-S04-SensorMicrofit2_2 Pin=D2_U_GSB-S04-SensorMicrofit2-2
+Added Pin To Net: NetName=NetD2_U_GSB-S04-SensorMicrofit2_2 Pin=R10_U_GSB-S04-SensorMicrofit2-2
+Added Net: Name=NetD2_U_GSB-S04-SensorMicrofit2_2
+Added Pin To Net: NetName=NetD2_U_GSB-S04-SensorMicrofit3_2 Pin=D2_U_GSB-S04-SensorMicrofit3-2
+Added Pin To Net: NetName=NetD2_U_GSB-S04-SensorMicrofit3_2 Pin=R10_U_GSB-S04-SensorMicrofit3-2
+Added Net: Name=NetD2_U_GSB-S04-SensorMicrofit3_2
+Added Pin To Net: NetName=NetJ4_2 Pin=J4-2
+Added Pin To Net: NetName=NetJ4_2 Pin=R9-2
+Added Net: Name=NetJ4_2
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=NetR1_2 Pin=U1-44
+Added Net: Name=NetR1_2
+Added Pin To Net: NetName=SENSOR ADC1 Pin=C11_U_GSB-S04-SensorMicrofit1-2
+Added Pin To Net: NetName=SENSOR ADC1 Pin=R10_U_GSB-S04-SensorMicrofit1-1
+Added Pin To Net: NetName=SENSOR ADC1 Pin=U1-11
+Added Net: Name=SENSOR ADC1
+Added Pin To Net: NetName=SENSOR ADC2 Pin=C11_U_GSB-S04-SensorMicrofit2-2
+Added Pin To Net: NetName=SENSOR ADC2 Pin=R10_U_GSB-S04-SensorMicrofit2-1
+Added Pin To Net: NetName=SENSOR ADC2 Pin=U1-12
+Added Net: Name=SENSOR ADC2
+Added Pin To Net: NetName=SENSOR ADC3 Pin=C11_U_GSB-S04-SensorMicrofit3-2
+Added Pin To Net: NetName=SENSOR ADC3 Pin=R10_U_GSB-S04-SensorMicrofit3-1
+Added Pin To Net: NetName=SENSOR ADC3 Pin=U1-13
+Added Net: Name=SENSOR ADC3
+Added Pin To Net: NetName=SPI MISO1 Pin=J8_U_GSB-S07-V00-SPImicrofit2-5
+Added Pin To Net: NetName=SPI MISO1 Pin=U1-16
+Added Net: Name=SPI MISO1
+Added Pin To Net: NetName=SPI MISO2 Pin=J8_U_GSB-S07-V00-SPImicrofit1-5
+Added Pin To Net: NetName=SPI MISO2 Pin=U1-27
+Added Net: Name=SPI MISO2
+Added Pin To Net: NetName=SPI MOSI1 Pin=J8_U_GSB-S07-V00-SPImicrofit2-6
+Added Pin To Net: NetName=SPI MOSI1 Pin=U1-17
+Added Net: Name=SPI MOSI1
+Added Pin To Net: NetName=SPI MOSI2 Pin=J8_U_GSB-S07-V00-SPImicrofit1-6
+Added Pin To Net: NetName=SPI MOSI2 Pin=U1-28
+Added Net: Name=SPI MOSI2
+Added Pin To Net: NetName=SPI NSS1 Pin=J8_U_GSB-S07-V00-SPImicrofit2-2
+Added Pin To Net: NetName=SPI NSS1 Pin=U1-14
+Added Net: Name=SPI NSS1
+Added Pin To Net: NetName=SPI NSS2 Pin=J8_U_GSB-S07-V00-SPImicrofit1-2
+Added Pin To Net: NetName=SPI NSS2 Pin=U1-25
+Added Net: Name=SPI NSS2
+Added Pin To Net: NetName=SPI SCK1 Pin=J8_U_GSB-S07-V00-SPImicrofit2-3
+Added Pin To Net: NetName=SPI SCK1 Pin=U1-15
+Added Net: Name=SPI SCK1
+Added Pin To Net: NetName=SPI SCK2 Pin=J8_U_GSB-S07-V00-SPImicrofit1-3
+Added Pin To Net: NetName=SPI SCK2 Pin=U1-26
+Added Net: Name=SPI SCK2
+Added Class: Name=U_GSB-S02-V00-Microcontroller
+Added Class: Name=U_GSB-S03-CarMicrofit
+Added Class: Name=U_GSB-S04-SensorMicrofit1
+Added Class: Name=U_GSB-S04-SensorMicrofit2
+Added Class: Name=U_GSB-S04-SensorMicrofit3
+Added Class: Name=U_GSB-S05-V00-CAN3
+Added Class: Name=U_GSB-S05-V00-PSU3V3
+Added Class: Name=U_GSB-S05-V00-PSU5V
+Added Class: Name=U_GSB-S06-V00-I2CMicrofit
+Added Class: Name=U_GSB-S07-V00-SPImicrofit1
+Added Class: Name=U_GSB-S07-V00-SPImicrofit2
+Added Class: Name=SENSOR ADC[1..3]
+Added Class: Name=GSB-S04-SensorMicrofit
+Added Class: Name=GSB-S07-V00-SPImicrofit
+Added Room: Name=U_GSB-S02-V00-Microcontroller
+Added Room: Name=U_GSB-S03-CarMicrofit
+Added Room: Name=U_GSB-S04-SensorMicrofit1
+Added Room: Name=U_GSB-S04-SensorMicrofit2
+Added Room: Name=U_GSB-S04-SensorMicrofit3
+Added Room: Name=U_GSB-S05-V00-CAN3
+Added Room: Name=U_GSB-S05-V00-PSU3V3
+Added Room: Name=U_GSB-S05-V00-PSU5V
+Added Room: Name=U_GSB-S06-V00-I2CMicrofit
+Added Room: Name=U_GSB-S07-V00-SPImicrofit1
+Added Room: Name=U_GSB-S07-V00-SPImicrofit2

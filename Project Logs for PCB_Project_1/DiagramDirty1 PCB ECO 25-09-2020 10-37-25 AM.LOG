@@ -1,0 +1,45 @@
+Removed Pin From Net: NetName=3V3 Pin=U1-9
+Added Component: Designator=C?(Cap_Ceramic_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/kemet/C0603C103M5RACTU/399-7842-1-ND/3471565"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=C?(Cap_Ceramic_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/kemet/C0603C103M5RACTU/399-7842-1-ND/3471565"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=C?(Cap_Ceramic_0603)
+Added Component: Designator=Cx1(Cap_Ceramic_0603)
+Added Component: Designator=D?(SOD-923)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/on-semiconductor/ESD9B3.3ST5G/ESD9B3.3ST5GOSCT-ND/2704995"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.onsemi.cn/pub/Collateral/ESD9B-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ESD9B3.3ST5G"; VariantName = "[No Variations]"
+Added Component: Designator=R?(Res_ThinFilm_0603)
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=3V3 Pin=C?-2
+Added Pin To Net: NetName=GND Pin=Cx1-1
+Added Pin To Net: NetName=GND Pin=D?-1
+Added Pin To Net: NetName=12V Pin=C?-2
+Added Net: Name=12V
+Added Pin To Net: NetName=NetC?_2 Pin=C?-2
+Added Pin To Net: NetName=NetC?_2 Pin=R?-1
+Added Pin To Net: NetName=NetC?_2 Pin=U1-38
+Added Net: Name=NetC?_2
+Added Pin To Net: NetName=NetCx1_2 Pin=Cx1-2
+Added Pin To Net: NetName=NetCx1_2 Pin=U1-9
+Added Net: Name=NetCx1_2
+Added Pin To Net: NetName=Sen_A Pin=D?-2
+Added Pin To Net: NetName=Sen_A Pin=R?-2
+Added Net: Name=Sen_A
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C? 10nF 50V 20% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C? 10nF 50V 20% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C? 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component Cx1 100nF
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component D? ESD9B3.3ST5G
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component R? 10k 1% 0603

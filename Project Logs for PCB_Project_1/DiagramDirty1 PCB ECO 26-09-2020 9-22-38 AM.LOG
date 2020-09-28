@@ -1,0 +1,303 @@
+Added Component: Designator=C1(Cap_Ceramic_0603)
+Added Component: Designator=C2(Cap_Ceramic_0603)
+Added Component: Designator=C3(Cap_Ceramic_0603)
+Added Component: Designator=C4(Cap_Ceramic_0603)
+Added Component: Designator=C5(Cap_Ceramic_0603)
+Added Component: Designator=C6(Cap_Ceramic_0603)
+Added Component: Designator=C7(Cap_Ceramic_0603)
+Added Component: Designator=C8(Cap_Ceramic_0603)
+Added Component: Designator=C9(Cap_Ceramic_0603)
+Added Component: Designator=C10(Cap_Ceramic_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/kemet/C0603C103M5RACTU/399-7842-1-ND/3471565"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=C11(Cap_Ceramic_0603)
+Added Component: Designator=C12(Cap_Ceramic_0603)
+Added Component: Designator=C13(Cap_Ceramic_0603)
+Added Component: Designator=C14(Cap_Ceramic_1206)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/tdk-corporation/C3216X5R1V226M160AC/445-8045-1-ND/2792165"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=C15(Cap_Ceramic_0603)
+Added Component: Designator=C16(Cap_Ceramic_0603)
+Added Component: Designator=D1(SOD-923)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/on-semiconductor/ESD9B3.3ST5G/ESD9B3.3ST5GOSCT-ND/2704995"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.onsemi.cn/pub/Collateral/ESD9B-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ESD9B3.3ST5G"; VariantName = "[No Variations]"
+Added Component: Designator=D2(SOD-923)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/on-semiconductor/ESD9B3.3ST5G/ESD9B3.3ST5GOSCT-ND/2704995"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.onsemi.cn/pub/Collateral/ESD9B-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ESD9B3.3ST5G"; VariantName = "[No Variations]"
+Added Component: Designator=D3(SOD-923)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/on-semiconductor/ESD9B3.3ST5G/ESD9B3.3ST5GOSCT-ND/2704995"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.onsemi.cn/pub/Collateral/ESD9B-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ESD9B3.3ST5G"; VariantName = "[No Variations]"
+Added Component: Designator=DS1(LED ORANGE 0603)
+Added Component: Designator=DS2(LED ORANGE 0603)
+Added Component: Designator=IC1(NCV4274CDT50RKG)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "NCV4274CDT50RKG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ncv4274cdt50rkg/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.onsemi.com/pub/Collateral/NCV4274C-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "2.38mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "NCV4274CDT50RKG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "863-NCV4274CDT50RKG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NCV4274CDT50RKG?qs=tCMd4XlZ%2FiBk5MdmOBr7cw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=IC2(NCV4274CDT50RKG)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "NCV4274CDT50RKG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ncv4274cdt50rkg/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.onsemi.com/pub/Collateral/NCV4274C-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "2.38mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "NCV4274CDT50RKG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "863-NCV4274CDT50RKG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NCV4274CDT50RKG?qs=tCMd4XlZ%2FiBk5MdmOBr7cw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=J1(IDC 1.27MM 10P)
+Added Component: Designator=J2(MOLEX_0436500400)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Snapeda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.snapeda.com/parts/0436500400/Molex/view-part/1776823/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0436500400"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/0436500400/Molex/view-part/1776823/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J3(MOLEX_0436500400)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Snapeda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.snapeda.com/parts/0436500400/Molex/view-part/1776823/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0436500400"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/0436500400/Molex/view-part/1776823/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J4(MOLEX_0436500400)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Snapeda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.snapeda.com/parts/0436500400/Molex/view-part/1776823/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0436500400"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/0436500400/Molex/view-part/1776823/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J5(MOLEX_0436500400)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Snapeda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.snapeda.com/parts/0436500400/Molex/view-part/1776823/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0436500400"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/0436500400/Molex/view-part/1776823/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J6(Jumper_3Way_Pin)
+Added Component: Designator=J7(Jumper_2Way_Pin)
+Added Component: Designator=L1(Inductor_6x6mm)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/w%C3%BCrth-elektronik/74404064221/732-7261-1-ND/5353241"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "LCSC A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://lcsc.com/product-detail/Power-Inductors_Sunlord-SWPA6045S221MT_C91047.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "LCSC B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://lcsc.com/product-detail/Power-Inductors_SXN-Shun-Xiang-Nuo-Elec-SMNR6045-221MT_C467145.html"; VariantName = "[No Variations]"
+Added Component: Designator=R1(Res_ThinFilm_0603)
+Added Component: Designator=R2(Res_ThinFilm_0603)
+Added Component: Designator=R3(Res_ThinFilm_0603)
+Added Component: Designator=R4(Res_ThinFilm_0603)
+Added Component: Designator=R5(Res_ThinFilm_0603)
+Added Component: Designator=R6(Res_ThinFilm_0603)
+Added Component: Designator=R7(Res_ThinFilm_0603)
+Added Component: Designator=R8(Res_ThinFilm_0603)
+Added Component: Designator=SW1(BTN B3U-1000P)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://lcsc.com/product-detail/Tactile-Switches_BRIGHT-TSA063G50-250_C294565.html"; VariantName = "[No Variations]"
+Added Component: Designator=U1(STM32F042C6)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/stmicroelectronics/STM32F042C6T6TR/497-19319-1-ND/10063344"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.st.com/resource/en/datasheet/stm32f042k6.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=U2(DSC1001DI1-008.0000TCT-ND)
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=3V3 Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=3V3 Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=3V3 Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=3V3 Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=3V3 Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=3V3 Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=3V3 Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=NRST Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=12V Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=3V3 Pin=C10-2
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=NetC11_2 Pin=C11-2
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=NetC12_2 Pin=C12-2
+Added Pin To Net: NetName=GND Pin=C13-1
+Added Pin To Net: NetName=12V Pin=C13-2
+Added Pin To Net: NetName=GND Pin=C14-1
+Added Pin To Net: NetName=5V Pin=C14-2
+Added Pin To Net: NetName=GND Pin=C15-1
+Added Pin To Net: NetName=NetC15_2 Pin=C15-2
+Added Pin To Net: NetName=GND Pin=C16-1
+Added Pin To Net: NetName=NetC16_2 Pin=C16-2
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=GND Pin=D2-1
+Added Pin To Net: NetName=NetD2_2 Pin=D2-2
+Added Pin To Net: NetName=GND Pin=D3-1
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=NetDS1_1 Pin=DS1-1
+Added Pin To Net: NetName=LED0 Pin=DS1-2
+Added Pin To Net: NetName=NetDS2_1 Pin=DS2-1
+Added Pin To Net: NetName=LED1 Pin=DS2-2
+Added Pin To Net: NetName=12V Pin=IC1-1
+Added Pin To Net: NetName=GND Pin=IC1-2
+Added Pin To Net: NetName=3V3 Pin=IC1-3
+Added Pin To Net: NetName=12V Pin=IC2-1
+Added Pin To Net: NetName=GND Pin=IC2-2
+Added Pin To Net: NetName=5V Pin=IC2-3
+Added Pin To Net: NetName=3V3 Pin=J1-1
+Added Pin To Net: NetName=SWDIO Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Pin To Net: NetName=SWCLK Pin=J1-4
+Added Pin To Net: NetName=GND Pin=J1-5
+Added Pin To Net: NetName=GND Pin=J1-9
+Added Pin To Net: NetName=NRST Pin=J1-10
+Added Pin To Net: NetName=3V3 Pin=J2-1
+Added Pin To Net: NetName=NetD2_2 Pin=J2-2
+Added Pin To Net: NetName=5V Pin=J2-3
+Added Pin To Net: NetName=GND Pin=J2-4
+Added Pin To Net: NetName=3V3 Pin=J3-1
+Added Pin To Net: NetName=NetD3_2 Pin=J3-2
+Added Pin To Net: NetName=5V Pin=J3-3
+Added Pin To Net: NetName=GND Pin=J3-4
+Added Pin To Net: NetName=3V3 Pin=J4-1
+Added Pin To Net: NetName=NetD1_2 Pin=J4-2
+Added Pin To Net: NetName=5V Pin=J4-3
+Added Pin To Net: NetName=GND Pin=J4-4
+Added Pin To Net: NetName=12V Pin=J5-1
+Added Pin To Net: NetName=CAN RX Pin=J5-2
+Added Pin To Net: NetName=CAN TX Pin=J5-3
+Added Pin To Net: NetName=GND Pin=J5-4
+Added Pin To Net: NetName=GND Pin=J6-1
+Added Pin To Net: NetName=USART1 RX Pin=J6-2
+Added Pin To Net: NetName=USART1 TX Pin=J6-3
+Added Pin To Net: NetName=I2C1 SDA Pin=J7-1
+Added Pin To Net: NetName=I2C1 SCL Pin=J7-2
+Added Pin To Net: NetName=3V3 Pin=L1-1
+Added Pin To Net: NetName=NetC12_2 Pin=L1-2
+Added Pin To Net: NetName=I2C1 SCL Pin=R1-1
+Added Pin To Net: NetName=3V3 Pin=R1-2
+Added Pin To Net: NetName=I2C1 SDA Pin=R2-1
+Added Pin To Net: NetName=3V3 Pin=R2-2
+Added Pin To Net: NetName=NRST Pin=R3-1
+Added Pin To Net: NetName=3V3 Pin=R3-2
+Added Pin To Net: NetName=NetDS1_1 Pin=R4-1
+Added Pin To Net: NetName=3V3 Pin=R4-2
+Added Pin To Net: NetName=NetDS2_1 Pin=R5-1
+Added Pin To Net: NetName=3V3 Pin=R5-2
+Added Pin To Net: NetName=NetC11_2 Pin=R6-1
+Added Pin To Net: NetName=NetD1_2 Pin=R6-2
+Added Pin To Net: NetName=NetC15_2 Pin=R7-1
+Added Pin To Net: NetName=NetD2_2 Pin=R7-2
+Added Pin To Net: NetName=NetC16_2 Pin=R8-1
+Added Pin To Net: NetName=NetD3_2 Pin=R8-2
+Added Pin To Net: NetName=GND Pin=SW1-1
+Added Pin To Net: NetName=NRST Pin=SW1-2
+Added Pin To Net: NetName=3V3 Pin=U1-1
+Added Pin To Net: NetName=OSC IN Pin=U1-5
+Added Pin To Net: NetName=GND Pin=U1-6
+Added Pin To Net: NetName=NRST Pin=U1-7
+Added Pin To Net: NetName=GND Pin=U1-8
+Added Pin To Net: NetName=NetC12_2 Pin=U1-9
+Added Pin To Net: NetName=NetC16_2 Pin=U1-13
+Added Pin To Net: NetName=CELL ALERT Pin=U1-22
+Added Pin To Net: NetName=GND Pin=U1-23
+Added Pin To Net: NetName=3V3 Pin=U1-24
+Added Pin To Net: NetName=LED0 Pin=U1-27
+Added Pin To Net: NetName=LED1 Pin=U1-28
+Added Pin To Net: NetName=USART1 TX Pin=U1-30
+Added Pin To Net: NetName=USART1 RX Pin=U1-31
+Added Pin To Net: NetName=CAN RX Pin=U1-32
+Added Pin To Net: NetName=CAN TX Pin=U1-33
+Added Pin To Net: NetName=SWDIO Pin=U1-34
+Added Pin To Net: NetName=GND Pin=U1-35
+Added Pin To Net: NetName=3V3 Pin=U1-36
+Added Pin To Net: NetName=SWCLK Pin=U1-37
+Added Pin To Net: NetName=NetC15_2 Pin=U1-38
+Added Pin To Net: NetName=NetC11_2 Pin=U1-39
+Added Pin To Net: NetName=I2C1 SCL Pin=U1-42
+Added Pin To Net: NetName=I2C1 SDA Pin=U1-43
+Added Pin To Net: NetName=CHG Pin=U1-45
+Added Pin To Net: NetName=DSG Pin=U1-46
+Added Pin To Net: NetName=GND Pin=U1-47
+Added Pin To Net: NetName=3V3 Pin=U1-48
+Added Pin To Net: NetName=3V3 Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=OSC IN Pin=U2-3
+Added Pin To Net: NetName=3V3 Pin=U2-4
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C1 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C2 4u7 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C3 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C4 4u7 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C5 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C6 4u7 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C7 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C8 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C9 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C10 10nF 50V 20% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C11 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C12 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C13 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C14 22uF 35V 20% X5R 1206
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C15 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component C16 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component D1 ESD9B3.3ST5G
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component D2 ESD9B3.3ST5G
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component D3 ESD9B3.3ST5G
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component DS1 LED Orange 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component DS2 LED Orange 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component IC1 NCV4274CDT50RKG
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component IC2 NCV4274CDT50RKG
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component J1 IDC 10P 2x5 1.27mm
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component J2 0436500400
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component J3 0436500400
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component J4 0436500400
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component J5 0436500400
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component J6 Jumper 3Way Pins
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component J7 Jumper 2Way Pins
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component L1 74404064221
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component R1 2k2 5% 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component R2 2k2 5% 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component R3 4k7 5% 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component R4 330R 5% 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component R5 330R 5% 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component R6 10k 1% 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component R7 10k 1% 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component R8 10k 1% 0603
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component SW1 B3U-1000P
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component U1 STM32F042C6
+Added Member To Class: ClassName=BMS-S04-V00-Microcontroller_1 Member=Component U2 DSC1001DI1-008.0000T
+Added Room: Name=BMS-S04-V00-Microcontroller_1

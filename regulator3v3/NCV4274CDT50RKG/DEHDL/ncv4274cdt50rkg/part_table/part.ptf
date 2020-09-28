@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'NCV4274CDT50RKG'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "ON Semiconductor", "NCV4274CDT50RKG" (!) = "", "NCV4274CDT50RKG", "Other", "NCV4274CDT50RKG", "https://www.arrow.com/en/products/ncv4274cdt50rkg/on-semiconductor", "863-NCV4274CDT50RKG", "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NCV4274CDT50RKG?qs=tCMd4XlZ%2FiBk5MdmOBr7cw%3D%3D", "ON SEMICONDUCTOR - NCV4274CDT50RKG - LDO, AEC-Q100, FIXED, 5V, 0.4A, TO-252-3", "https://www.onsemi.com/pub/Collateral/NCV4274C-D.PDF", "2.38 mm"
+END_PART
+
+END.

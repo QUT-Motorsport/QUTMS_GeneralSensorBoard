@@ -1,0 +1,135 @@
+Added Component: Designator=C1(Cap_Ceramic_0603)
+Added Component: Designator=C2(Cap_Ceramic_0603)
+Added Component: Designator=C3(Cap_Ceramic_0603)
+Added Component: Designator=C4(Cap_Ceramic_0603)
+Added Component: Designator=C5(Cap_Ceramic_0603)
+Added Component: Designator=C6(Cap_Ceramic_0603)
+Added Component: Designator=C7(Cap_Ceramic_0603)
+Added Component: Designator=C8(Cap_Ceramic_0603)
+Added Component: Designator=DS1(LED ORANGE 0603)
+Added Component: Designator=DS2(LED ORANGE 0603)
+Added Component: Designator=J1(IDC 1.27MM 10P)
+Added Component: Designator=P1(HDR1X3)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R1(Res_ThinFilm_0603)
+Added Component: Designator=R2(Res_ThinFilm_0603)
+Added Component: Designator=R3(Res_ThinFilm_0603)
+Added Component: Designator=R4(Res_ThinFilm_0603)
+Added Component: Designator=R5(Res_ThinFilm_0603)
+Added Component: Designator=SW1(BTN B3U-1000P)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://lcsc.com/product-detail/Tactile-Switches_BRIGHT-TSA063G50-250_C294565.html"; VariantName = "[No Variations]"
+Added Component: Designator=U1(STM32F042C6)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com.au/product-detail/en/stmicroelectronics/STM32F042C6T6TR/497-19319-1-ND/10063344"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.st.com/resource/en/datasheet/stm32f042k6.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=U2(DSC1001DI1-008.0000TCT-ND)
+Added Pin To Net: NetName=3V3 Pin=C1-2
+Added Pin To Net: NetName=3V3 Pin=C2-2
+Added Pin To Net: NetName=3V3 Pin=C3-2
+Added Pin To Net: NetName=3V3 Pin=C4-2
+Added Pin To Net: NetName=3V3 Pin=C5-2
+Added Pin To Net: NetName=3V3 Pin=C6-2
+Added Pin To Net: NetName=3V3 Pin=C7-2
+Added Pin To Net: NetName=3V3 Pin=J1-1
+Added Pin To Net: NetName=3V3 Pin=R1-2
+Added Pin To Net: NetName=3V3 Pin=R2-2
+Added Pin To Net: NetName=3V3 Pin=R3-2
+Added Pin To Net: NetName=3V3 Pin=R4-2
+Added Pin To Net: NetName=3V3 Pin=R5-2
+Added Pin To Net: NetName=3V3 Pin=U1-1
+Added Pin To Net: NetName=3V3 Pin=U1-9
+Added Pin To Net: NetName=3V3 Pin=U1-24
+Added Pin To Net: NetName=3V3 Pin=U1-36
+Added Pin To Net: NetName=3V3 Pin=U1-48
+Added Pin To Net: NetName=3V3 Pin=U2-1
+Added Pin To Net: NetName=3V3 Pin=U2-4
+Added Net: Name=3V3
+Added Pin To Net: NetName=CAN RX Pin=U1-32
+Added Net: Name=CAN RX
+Added Pin To Net: NetName=CAN TX Pin=U1-33
+Added Net: Name=CAN TX
+Added Pin To Net: NetName=CELL ALERT Pin=U1-22
+Added Net: Name=CELL ALERT
+Added Pin To Net: NetName=CHG Pin=U1-45
+Added Net: Name=CHG
+Added Pin To Net: NetName=DSG Pin=U1-46
+Added Net: Name=DSG
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Pin To Net: NetName=GND Pin=J1-5
+Added Pin To Net: NetName=GND Pin=J1-9
+Added Pin To Net: NetName=GND Pin=P1-3
+Added Pin To Net: NetName=GND Pin=SW1-1
+Added Pin To Net: NetName=GND Pin=U1-6
+Added Pin To Net: NetName=GND Pin=U1-8
+Added Pin To Net: NetName=GND Pin=U1-23
+Added Pin To Net: NetName=GND Pin=U1-35
+Added Pin To Net: NetName=GND Pin=U1-47
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Net: Name=GND
+Added Pin To Net: NetName=I2C1 SCL Pin=R1-1
+Added Pin To Net: NetName=I2C1 SCL Pin=U1-42
+Added Net: Name=I2C1 SCL
+Added Pin To Net: NetName=I2C1 SDA Pin=R2-1
+Added Pin To Net: NetName=I2C1 SDA Pin=U1-43
+Added Net: Name=I2C1 SDA
+Added Pin To Net: NetName=LED0 Pin=DS1-2
+Added Pin To Net: NetName=LED0 Pin=U1-27
+Added Net: Name=LED0
+Added Pin To Net: NetName=LED1 Pin=DS2-2
+Added Pin To Net: NetName=LED1 Pin=U1-28
+Added Net: Name=LED1
+Added Pin To Net: NetName=nALARM Pin=U1-15
+Added Net: Name=nALARM
+Added Pin To Net: NetName=NetDS1_1 Pin=DS1-1
+Added Pin To Net: NetName=NetDS1_1 Pin=R4-1
+Added Net: Name=NetDS1_1
+Added Pin To Net: NetName=NetDS2_1 Pin=DS2-1
+Added Pin To Net: NetName=NetDS2_1 Pin=R5-1
+Added Net: Name=NetDS2_1
+Added Pin To Net: NetName=NRST Pin=C8-2
+Added Pin To Net: NetName=NRST Pin=J1-10
+Added Pin To Net: NetName=NRST Pin=R3-1
+Added Pin To Net: NetName=NRST Pin=SW1-2
+Added Pin To Net: NetName=NRST Pin=U1-7
+Added Net: Name=NRST
+Added Pin To Net: NetName=OSC IN Pin=U1-5
+Added Pin To Net: NetName=OSC IN Pin=U2-3
+Added Net: Name=OSC IN
+Added Pin To Net: NetName=SWCLK Pin=J1-4
+Added Pin To Net: NetName=SWCLK Pin=U1-37
+Added Net: Name=SWCLK
+Added Pin To Net: NetName=SWDIO Pin=J1-2
+Added Pin To Net: NetName=SWDIO Pin=U1-34
+Added Net: Name=SWDIO
+Added Pin To Net: NetName=TEMP1 Pin=U1-38
+Added Net: Name=TEMP1
+Added Pin To Net: NetName=TEMP2 Pin=U1-13
+Added Net: Name=TEMP2
+Added Pin To Net: NetName=TEMP3 Pin=U1-39
+Added Net: Name=TEMP3
+Added Pin To Net: NetName=TEMP4 Pin=U1-40
+Added Net: Name=TEMP4
+Added Pin To Net: NetName=TEMP5 Pin=U1-41
+Added Net: Name=TEMP5
+Added Pin To Net: NetName=TEMP SOC Pin=U1-14
+Added Net: Name=TEMP SOC
+Added Pin To Net: NetName=USART1 RX Pin=P1-2
+Added Pin To Net: NetName=USART1 RX Pin=U1-31
+Added Net: Name=USART1 RX
+Added Pin To Net: NetName=USART1 TX Pin=P1-1
+Added Pin To Net: NetName=USART1 TX Pin=U1-30
+Added Net: Name=USART1 TX
+Added Class: Name=BMS-S04-V00-Microcontroller_1
+Added Room: Name=BMS-S04-V00-Microcontroller_1

@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=USART1 TX Pin=P?-1
+Removed Pin From Net: NetName=USART1 RX Pin=P?-2
+Removed Pin From Net: NetName=NetCin_1 Pin=U1-5
+Added Pin To Net: NetName=USART1 TX Pin=P1-1
+Added Pin To Net: NetName=USART1 RX Pin=P1-2
+Added Pin To Net: NetName=3V3 Pin=U1-1
+Added Pin To Net: NetName=NetCboot_1 Pin=U1-1
+Added Pin To Net: NetName=0 Pin=U1-2
+Added Pin To Net: NetName=NetRfbb_1 Pin=U1-3
+Added Pin To Net: NetName=12V Pin=U1-5
+Added Pin To Net: NetName=NetCin_1 Pin=U1-5
+Added Pin To Net: NetName=OSC IN Pin=U1-5
+Added Pin To Net: NetName=GND Pin=U1-6
+Added Pin To Net: NetName=NetCboot_2 Pin=U1-6
