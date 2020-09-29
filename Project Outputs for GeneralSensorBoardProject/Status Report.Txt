@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [GeneralSensorBoardProject.PrjPcb]
+   Generated File[GSB-P01-V00.TXT]
+   Generated File[GSB-P01-V00.LDP]
+   Generated File[GSB-P01-V00.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 12:59:49 PM On 29/09/2020

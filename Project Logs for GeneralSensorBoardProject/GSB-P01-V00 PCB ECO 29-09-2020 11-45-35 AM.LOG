@@ -1,0 +1,20 @@
+Removed Member From Class: ClassName=GSB-S01-V00-GeneralSensorBoard Member=M4
+Change Component Designator: OldDesignator=J7_SPI1 NewDesignator=J7_SPI 1
+Change Component Designator: OldDesignator=J7_SPI2 NewDesignator=J7_SPI 2
+Added Member To Class: ClassName=A Member=Component C15_A (C15) 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=B Member=Component C15_B (C15) 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=C Member=Component C15_C (C15) 100nF 50V 5% X7R 0603
+Added Member To Class: ClassName=U_GSB-S02-V00-Microcontroller Member=Component R4 330R 5% 0603
+Added Member To Class: ClassName=U_GSB-S02-V00-Microcontroller Member=Component U1 STM32F042C6
+Added Room: Name=A
+Added Room: Name=B
+Added Room: Name=C
+Added Room: Name=Car Microfit
+Added Room: Name=GSB-S01-V00-GeneralSensorBoard
+Added Room: Name=I2C
+Added Room: Name=SPI 1
+Added Room: Name=SPI 2
+Added Room: Name=U_GSB-S02-V00-Microcontroller
+Added Room: Name=U_GSB-S05-V00-CAN3
+Added Room: Name=U_GSB-S05-V00-PSU3V3
+Added Room: Name=U_GSB-S05-V00-PSU5V
