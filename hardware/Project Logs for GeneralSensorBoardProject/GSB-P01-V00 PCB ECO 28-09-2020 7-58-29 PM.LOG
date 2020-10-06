@@ -1,0 +1,16 @@
+Change Component Designator: OldDesignator=J7_1 NewDesignator=J7_SPI 1
+Change Component Designator: OldDesignator=J7_2 NewDesignator=J7_SPI 2
+Added Component: Designator=FID1(FIDUCIAL 2MM)
+Added Component: Designator=FID2(FIDUCIAL 2MM)
+Added Component: Designator=FID3(FIDUCIAL 2MM)
+Added Component: Designator=FID4(FIDUCIAL 2MM)
+Added Component: Designator=LOGO1(QUTMS LOGO 40MM)
+Added Component: Designator=LYID1(LAYER IDENT 2)
+Added Component: Designator=M1(M3.5 UNPLATED)
+Added Component: Designator=M2(M3.5 UNPLATED)
+Added Component: Designator=M3(M3.5 UNPLATED)
+Added Component: Designator=M4(M3.5 UNPLATED)
+Added Class: Name=GSB-S01-V00-GeneralSensorBoard
+Added Member To Class: ClassName=SPI 1 Member=Component J7_SPI 1 (J7) Microfit 3.0 2x3
+Added Member To Class: ClassName=SPI 2 Member=Component J7_SPI 2 (J7) Microfit 3.0 2x3
+Added Room: Name=GSB-S01-V00-GeneralSensorBoard

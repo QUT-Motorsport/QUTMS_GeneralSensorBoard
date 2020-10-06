@@ -1,0 +1,19 @@
+Removed Member From Class: ClassName=GSB-S01-V00-GeneralSensorBoard Member=FID4
+Change Component Footprint: Designator=FID1 Old Footprint=FIDUCIAL 2MM New Footprint=FIDUCIAL 1MM
+Change Component Footprint: Designator=FID3 Old Footprint=FIDUCIAL 2MM New Footprint=FIDUCIAL 1MM
+Change Component Comment : Designator=FID1 Old Comment=Fiducial 2MM New Comment=Fiducial 1MM
+Change Component Comment : Designator=FID3 Old Comment=Fiducial 2MM New Comment=Fiducial 1MM
+Added Component: Designator=FID2(FIDUCIAL 1MM)
+Added Member To Class: ClassName=GSB-S01-V00-GeneralSensorBoard Member=Component FID2 Fiducial 1MM
+Added Room: Name=A
+Added Room: Name=B
+Added Room: Name=C
+Added Room: Name=Car Microfit
+Added Room: Name=GSB-S01-V00-GeneralSensorBoard
+Added Room: Name=I2C
+Added Room: Name=SPI 1
+Added Room: Name=SPI 2
+Added Room: Name=U_GSB-S02-V00-Microcontroller
+Added Room: Name=U_GSB-S05-V00-CAN3
+Added Room: Name=U_GSB-S05-V00-PSU3V3
+Added Room: Name=U_GSB-S05-V00-PSU5V
