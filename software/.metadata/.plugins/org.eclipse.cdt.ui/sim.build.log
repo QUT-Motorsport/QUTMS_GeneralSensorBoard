@@ -1,0 +1,27 @@
+14:34:02 **** Incremental Build of configuration Debug for project sim ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F042x6 -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:12: warning: unused variable 'min_raw' [-Wunused-variable]
+   uint16_t min_raw  = 2277;
+            ^~~~~~~
+../Core/Src/main.c:104:12: warning: unused variable 'max_raw' [-Wunused-variable]
+   uint16_t max_raw = 4020; //got the numbers from test
+            ^~~~~~~
+arm-none-eabi-gcc -o "sim.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\taman\STM32CubeIDE\workspace_4\sim\STM32F042C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sim.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sim.elf
+ 
+arm-none-eabi-objdump -h -S  sim.elf  > "sim.list"
+arm-none-eabi-objcopy  -O binary  sim.elf  "sim.bin"
+arm-none-eabi-size   sim.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13924	    120	   1784	  15828	   3dd4	sim.elf
+Finished building: default.size.stdout
+ 
+Finished building: sim.bin
+ 
+Finished building: sim.list
+ 
+
+14:34:03 Build Finished. 0 errors, 2 warnings. (took 1s.307ms)
+
