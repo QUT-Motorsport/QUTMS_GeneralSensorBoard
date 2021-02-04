@@ -19,6 +19,7 @@ Mcu.IPNb=6
 Mcu.Name=STM32F042C(4-6)Tx
 Mcu.Package=LQFP48
 Mcu.Pin0=PA1
+<<<<<<< Updated upstream
 Mcu.Pin1=PA2
 Mcu.Pin2=PA9
 Mcu.Pin3=PA10
@@ -26,6 +27,14 @@ Mcu.Pin4=PA11
 Mcu.Pin5=PA12
 Mcu.Pin6=VP_SYS_VS_Systick
 Mcu.PinsNb=7
+=======
+Mcu.Pin1=PA9
+Mcu.Pin2=PA10
+Mcu.Pin3=PA11
+Mcu.Pin4=PA12
+Mcu.Pin5=VP_SYS_VS_Systick
+Mcu.PinsNb=6
+>>>>>>> Stashed changes
 Mcu.ThirdPartyNb=0
 Mcu.UserConstants=
 Mcu.UserName=STM32F042C6Tx
@@ -46,9 +55,12 @@ PA11.Mode=CAN_Activate
 PA11.Signal=CAN_RX
 PA12.Mode=CAN_Activate
 PA12.Signal=CAN_TX
+<<<<<<< Updated upstream
 PA2.Locked=true
 PA2.Mode=IN2
 PA2.Signal=ADC_IN2
+=======
+>>>>>>> Stashed changes
 PA9.Mode=Asynchronous
 PA9.Signal=USART1_TX
 PinOutPanel.RotationAngle=0
