@@ -63,6 +63,7 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 #define Suspension_ADC ADC_CHANNEL_1
 #define GearBox_ADC ADC_CHANNEL_2
+#define Radiator_ADC CHANNEL_3
 #define TEM30C ((uint16_t*) ((uint32_t) 0x1FFFF7B8))
 #define TEMP110C ((uint16_t*) ((uint32_t) 0x1FFFF7C2))
 
@@ -183,6 +184,13 @@ int main(void)
 		  		  HAL_UART_Transmit(&huart1,  (uint8_t*) msg, strlen((char*) msg),
 		  		  				HAL_MAX_DELAY);
 	 HAL_Delay(500);
+
+	 raw = r_single_ext_channel_ADC(Radiator_ADC);
+	 	  uint16_t temperature_c = temprature(raw);
+	 	  sprintf(msg, "gear box: %d          C: %d\r\n", raw, temperature_c);
+	 		  		  HAL_UART_Transmit(&huart1,  (uint8_t*) msg, strlen((char*) msg),
+	 		  		  				HAL_MAX_DELAY);
+	 	 HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }
