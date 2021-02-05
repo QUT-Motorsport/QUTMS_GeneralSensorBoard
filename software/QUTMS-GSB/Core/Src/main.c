@@ -19,11 +19,17 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
+#include "can.h"
+#include "usart.h"
+#include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <string.h>
 #include <stdio.h>
+#include <stdbool.h>
+#include <math.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -41,25 +47,78 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-ADC_HandleTypeDef hadc;
-
-UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
+
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-static void MX_GPIO_Init(void);
-static void MX_USART1_UART_Init(void);
-static void MX_ADC_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+#define Suspension_ADC ADC_CHANNEL_1
+#define GearBox_ADC ADC_CHANNEL_2
+#define TEM30C ((uint16_t*) ((uint32_t) 0x1FFFF7B8))
+#define TEMP110C ((uint16_t*) ((uint32_t) 0x1FFFF7C2))
+
+
+void config_ext_channel_ADC(uint16_t channel, bool val)
+{
+  ADC_ChannelConfTypeDef sConfig;
+  sConfig.Channel = channel;
+  sConfig.SamplingTime = ADC_SAMPLETIME_71CYCLES_5;
+
+  if(true == val)
+  {
+    sConfig.Rank = ADC_RANK_CHANNEL_NUMBER;
+  }
+  else
+  {
+    sConfig.Rank = ADC_RANK_NONE;
+  }
+
+  HAL_ADC_ConfigChannel(&hadc, &sConfig);
+}
+
+uint16_t r_single_ext_channel_ADC(uint16_t channel)
+{
+  uint16_t digital_result;
+  config_ext_channel_ADC(channel, true);
+  HAL_ADCEx_Calibration_Start(&hadc);
+
+  HAL_ADC_Start(&hadc);
+  HAL_ADC_PollForConversion(&hadc, 1000);
+  digital_result = HAL_ADC_GetValue(&hadc);
+  HAL_ADC_Stop(&hadc);
+
+  config_ext_channel_ADC(channel, false);
+
+  return digital_result;
+}
+
+uint16_t GET_Suspension(){
+	uint16_t suspension_raw = r_single_ext_channel_ADC(Suspension_ADC);
+	return suspension_raw;
+}
+
+
+uint16_t GET_Gearbox(){
+	uint16_t Gearbox_raw = r_single_ext_channel_ADC(GearBox_ADC);
+	return Gearbox_raw;
+}
+
+float temprature(uint32_t ts_data){
+	float temp;
+	float slope = ((110.0 - 30.0)/((*TEMP110C) - (*TEM30C)));
+	//temp = ((3.3/3.3) * ts_data) / 1000;
+	temp = (slope * (ts_data - (*TEM30C))) + 30;
+	return temp;
+}
 
 /* USER CODE END 0 */
 
@@ -93,6 +152,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   MX_ADC_Init();
+  MX_CAN_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -100,45 +160,29 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  uint16_t raw = 0;
-  uint16_t max_raw = 4020; //got the numbers from test
-  uint16_t min_raw  = 2277;
   char msg[100];
-  int raw_percent;
-
-  uint16_t max = 0;
-  uint16_t min = 9999;
+  uint16_t raw = 0;
+  uint16_t max_suspension = 4055;//taken data form the suspension
+  uint16_t min_suspension = 2330;
 
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  //read ADC value
+	  raw = r_single_ext_channel_ADC(Suspension_ADC);
+	  uint16_t raw_percent =(float)(raw-min_suspension)/(max_suspension-min_suspension) * 100;
+	  sprintf(msg, "suspension: %d          percent: %d\r\n", raw, raw_percent);
+	  		  HAL_UART_Transmit(&huart1, (uint8_t*) msg, strlen((char*) msg),
+	  		  				HAL_MAX_DELAY);
+	  HAL_Delay(500);
 
-	  HAL_ADC_Start(&hadc);
-	  raw = HAL_ADC_GetValue(&hadc);
-
-	  if (raw > max) {
-		  max = raw;
-	  }
-
-	  if (raw < min) {
-		  min = raw;
-	  }
-		//HAL_ADC_Start(&hadc);
-		//HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
-		//raw = HAL_ADC_GetValue(&hadc);
-
-	  	  //print on serial
-	 	raw_percent =(float)(raw-min)/(max-min) * 100;// (float)( ((raw-min_raw)/(max_raw-min_raw))*100);
-		sprintf(msg, "%d\t max %d\t min %d\t raw_percent %d\r\n", raw, max, min, raw_percent);
-		HAL_UART_Transmit(&huart1, (uint8_t*) msg, strlen((char*) msg),
-				HAL_MAX_DELAY);
-
-
-		HAL_Delay(100);
-
+	  raw = r_single_ext_channel_ADC(GearBox_ADC);
+	  uint16_t temperature_c = temprature(raw);
+	  sprintf(msg, "gear box: %d          C: %d\r\n", raw, temperature_c);
+		  		  HAL_UART_Transmit(&huart1,  (uint8_t*) msg, strlen((char*) msg),
+		  		  				HAL_MAX_DELAY);
+	 HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }
@@ -184,106 +228,6 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-}
-
-/**
-  * @brief ADC Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_ADC_Init(void)
-{
-
-  /* USER CODE BEGIN ADC_Init 0 */
-
-  /* USER CODE END ADC_Init 0 */
-
-  ADC_ChannelConfTypeDef sConfig = {0};
-
-  /* USER CODE BEGIN ADC_Init 1 */
-
-  /* USER CODE END ADC_Init 1 */
-  /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)
-  */
-  hadc.Instance = ADC1;
-  hadc.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
-  hadc.Init.Resolution = ADC_RESOLUTION_12B;
-  hadc.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-  hadc.Init.ScanConvMode = ADC_SCAN_DIRECTION_FORWARD;
-  hadc.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
-  hadc.Init.LowPowerAutoWait = DISABLE;
-  hadc.Init.LowPowerAutoPowerOff = DISABLE;
-  hadc.Init.ContinuousConvMode = ENABLE;
-  hadc.Init.DiscontinuousConvMode = DISABLE;
-  hadc.Init.ExternalTrigConv = ADC_SOFTWARE_START;
-  hadc.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
-  hadc.Init.DMAContinuousRequests = DISABLE;
-  hadc.Init.Overrun = ADC_OVR_DATA_PRESERVED;
-  if (HAL_ADC_Init(&hadc) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /** Configure for the selected ADC regular channel to be converted.
-  */
-  sConfig.Channel = ADC_CHANNEL_1;
-  sConfig.Rank = ADC_RANK_CHANNEL_NUMBER;
-  sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
-  if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN ADC_Init 2 */
-
-  /* USER CODE END ADC_Init 2 */
-
-}
-
-/**
-  * @brief USART1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART1_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART1_Init 0 */
-
-  /* USER CODE END USART1_Init 0 */
-
-  /* USER CODE BEGIN USART1_Init 1 */
-
-  /* USER CODE END USART1_Init 1 */
-  huart1.Instance = USART1;
-  huart1.Init.BaudRate = 38400;
-  huart1.Init.WordLength = UART_WORDLENGTH_8B;
-  huart1.Init.StopBits = UART_STOPBITS_1;
-  huart1.Init.Parity = UART_PARITY_NONE;
-  huart1.Init.Mode = UART_MODE_TX_RX;
-  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
-  huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
-  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
-  if (HAL_UART_Init(&huart1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART1_Init 2 */
-
-  /* USER CODE END USART1_Init 2 */
-
-}
-
-/**
-  * @brief GPIO Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_GPIO_Init(void)
-{
-
-  /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOA_CLK_ENABLE();
-
 }
 
 /* USER CODE BEGIN 4 */
