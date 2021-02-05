@@ -2,10 +2,12 @@
 ADC.ContinuousConvMode=ENABLE
 ADC.DMAContinuousRequests=DISABLE
 ADC.IPParameters=DMAContinuousRequests,ContinuousConvMode
-CAN.CalculateBaudRate=166666
-CAN.CalculateTimeBit=6000.00
+CAN.BS1=CAN_BS1_13TQ
+CAN.BS2=CAN_BS2_2TQ
+CAN.CalculateBaudRate=31250
+CAN.CalculateTimeBit=32000.00
 CAN.CalculateTimeQuantum=2000.0
-CAN.IPParameters=CalculateTimeQuantum,CalculateTimeBit,CalculateBaudRate
+CAN.IPParameters=CalculateTimeQuantum,CalculateTimeBit,CalculateBaudRate,BS1,BS2
 File.Version=6
 KeepUserPlacement=false
 Mcu.Family=STM32F0
@@ -19,22 +21,14 @@ Mcu.IPNb=6
 Mcu.Name=STM32F042C(4-6)Tx
 Mcu.Package=LQFP48
 Mcu.Pin0=PA1
-<<<<<<< Updated upstream
 Mcu.Pin1=PA2
-Mcu.Pin2=PA9
-Mcu.Pin3=PA10
-Mcu.Pin4=PA11
-Mcu.Pin5=PA12
-Mcu.Pin6=VP_SYS_VS_Systick
-Mcu.PinsNb=7
-=======
-Mcu.Pin1=PA9
-Mcu.Pin2=PA10
-Mcu.Pin3=PA11
-Mcu.Pin4=PA12
-Mcu.Pin5=VP_SYS_VS_Systick
-Mcu.PinsNb=6
->>>>>>> Stashed changes
+Mcu.Pin2=PA3
+Mcu.Pin3=PA9
+Mcu.Pin4=PA10
+Mcu.Pin5=PA11
+Mcu.Pin6=PA12
+Mcu.Pin7=VP_SYS_VS_Systick
+Mcu.PinsNb=8
 Mcu.ThirdPartyNb=0
 Mcu.UserConstants=
 Mcu.UserName=STM32F042C6Tx
@@ -55,12 +49,12 @@ PA11.Mode=CAN_Activate
 PA11.Signal=CAN_RX
 PA12.Mode=CAN_Activate
 PA12.Signal=CAN_TX
-<<<<<<< Updated upstream
 PA2.Locked=true
 PA2.Mode=IN2
 PA2.Signal=ADC_IN2
-=======
->>>>>>> Stashed changes
+PA3.Locked=true
+PA3.Mode=IN3
+PA3.Signal=ADC_IN3
 PA9.Mode=Asynchronous
 PA9.Signal=USART1_TX
 PinOutPanel.RotationAngle=0

@@ -63,7 +63,7 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 #define Suspension_ADC ADC_CHANNEL_1
 #define GearBox_ADC ADC_CHANNEL_2
-#define Radiator_ADC CHANNEL_3
+#define Radiator_ADC  ADC_CHANNEL_3
 #define TEM30C ((uint16_t*) ((uint32_t) 0x1FFFF7B8))
 #define TEMP110C ((uint16_t*) ((uint32_t) 0x1FFFF7C2))
 
@@ -121,6 +121,26 @@ float temprature(uint32_t ts_data){
 	return temp;
 }
 
+void CAN1_Tx(void)
+{
+	char msg[50];
+	CAN_TxHeaderTypeDef TxHeader;
+	uint32_t TxMailbox;
+	uint8_t our_messasge[6] = {'H', 'E', 'L', 'L', 'O'};
+	TxHeader.DLC = 5;
+	TxHeader.StdId = 0x65D;
+	TxHeader.IDE = CAN_ID_STD;
+	TxHeader.RTR = CAN_RTR_DATA;
+//
+	HAL_CAN_AddTxMessage(&hcan,&TxHeader, our_messasge, &TxMailbox);
+//	{
+//		Error_handler();
+//	}
+
+	sprintf(msg, "Message Transmitted\r\n");
+	HAL_UART_Transmit(&huart1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+
+}
 /* USER CODE END 0 */
 
 /**
@@ -160,6 +180,9 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  HAL_CAN_Start(&hcan);
+
+
 
   char msg[100];
   uint16_t raw = 0;
@@ -169,7 +192,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  CAN1_Tx();
     /* USER CODE BEGIN 3 */
 	  raw = r_single_ext_channel_ADC(Suspension_ADC);
 	  uint16_t raw_percent =(float)(raw-min_suspension)/(max_suspension-min_suspension) * 100;
@@ -186,7 +209,7 @@ int main(void)
 	 HAL_Delay(500);
 
 	 raw = r_single_ext_channel_ADC(Radiator_ADC);
-	 	  uint16_t temperature_c = temprature(raw);
+	 	   temperature_c = temprature(raw);
 	 	  sprintf(msg, "gear box: %d          C: %d\r\n", raw, temperature_c);
 	 		  		  HAL_UART_Transmit(&huart1,  (uint8_t*) msg, strlen((char*) msg),
 	 		  		  				HAL_MAX_DELAY);
