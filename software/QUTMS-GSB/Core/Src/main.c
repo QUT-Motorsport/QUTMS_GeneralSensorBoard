@@ -124,15 +124,7 @@ float temprature(uint32_t ts_data){
 void CAN1_Tx(void)
 {
 	char msg[50];
-	CAN_TxHeaderTypeDef TxHeader;
-	uint32_t TxMailbox;
-	uint8_t our_messasge[6] = {'H', 'E', 'L', 'L', 'O'};
-	TxHeader.DLC = 5;
-	TxHeader.StdId = 0x65D;
-	TxHeader.IDE = CAN_ID_STD;
-	TxHeader.RTR = CAN_RTR_DATA;
-//
-	HAL_CAN_AddTxMessage(&hcan,&TxHeader, our_messasge, &TxMailbox);
+
 //	{
 //		Error_handler();
 //	}
@@ -140,6 +132,44 @@ void CAN1_Tx(void)
 	sprintf(msg, "Message Transmitted\r\n");
 	HAL_UART_Transmit(&huart1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
 
+}
+
+void Configure_CAN(CAN_HandleTypeDef *canHandle) {
+	CAN_FilterTypeDef sFilterConfig;
+
+	// only want to accept messages from the AMS
+
+	/* Configure the CAN Filter */
+	sFilterConfig.FilterBank = 0;
+	sFilterConfig.FilterMode = CAN_FILTERMODE_IDMASK;
+	sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
+
+	// what bits of the CAN ID do we care about
+//	sFilterConfig.FilterMaskIdHigh = (CAN_MASK_SRC_ID & 0xFFFF) >> (16);
+//	sFilterConfig.FilterMaskIdLow = (CAN_MASK_SRC_ID & 0xFFFF);
+//
+//	// what values do we want
+//	sFilterConfig.FilterIdHigh = (CAN_SRC_ID_AMS & 0xFFFF) >> (16);
+//	sFilterConfig.FilterIdLow = (CAN_SRC_ID_AMS & 0xFFFF);
+
+	sFilterConfig.FilterFIFOAssignment = CAN_RX_FIFO0;
+	sFilterConfig.FilterActivation = ENABLE;
+	sFilterConfig.SlaveStartFilterBank = 14;
+
+	// add filter for incoming messages
+	if (HAL_CAN_ConfigFilter(&hcan, &sFilterConfig) != HAL_OK) {
+		Error_Handler();
+	}
+
+	// start peripheral
+	if (HAL_CAN_Start(&hcan) != HAL_OK) {
+		Error_Handler();
+	}
+
+	// activate rx notification
+	if (HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING) != HAL_OK) {
+		Error_Handler();
+	}
 }
 /* USER CODE END 0 */
 
@@ -180,7 +210,8 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  HAL_CAN_Start(&hcan);
+  Configure_CAN(&hcan);
+  //HAL_StatusTypeDef result =HAL_CAN_Start(&hcan);
 
 
 
@@ -189,11 +220,23 @@ int main(void)
   uint16_t max_suspension = 4055;//taken data form the suspension
   uint16_t min_suspension = 2330;
 
+  	CAN_TxHeaderTypeDef TxHeader;
+	uint32_t TxMailbox;
+	uint8_t our_messasge[6] = {'H', 'E', 'L', 'L', 'O', '\n'};
+	TxHeader.DLC = 6;
+	TxHeader.StdId = 0x65D;
+	TxHeader.IDE = CAN_ID_STD;
+	TxHeader.RTR = CAN_RTR_DATA;
   while (1)
   {
     /* USER CODE END WHILE */
-	  CAN1_Tx();
+
     /* USER CODE BEGIN 3 */
+
+	//
+		HAL_CAN_AddTxMessage(&hcan,&TxHeader, our_messasge, &TxMailbox);
+	  //CAN1_Tx();
+
 	  raw = r_single_ext_channel_ADC(Suspension_ADC);
 	  uint16_t raw_percent =(float)(raw-min_suspension)/(max_suspension-min_suspension) * 100;
 	  sprintf(msg, "suspension: %d          percent: %d\r\n", raw, raw_percent);
@@ -214,6 +257,7 @@ int main(void)
 	 		  		  HAL_UART_Transmit(&huart1,  (uint8_t*) msg, strlen((char*) msg),
 	 		  		  				HAL_MAX_DELAY);
 	 	 HAL_Delay(500);
+
   }
   /* USER CODE END 3 */
 }
@@ -231,10 +275,9 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSI14;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI14|RCC_OSCILLATORTYPE_HSI48;
+  RCC_OscInitStruct.HSI48State = RCC_HSI48_ON;
   RCC_OscInitStruct.HSI14State = RCC_HSI14_ON;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.HSI14CalibrationValue = 16;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
@@ -245,11 +288,11 @@ void SystemClock_Config(void)
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI48;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     Error_Handler();
   }
