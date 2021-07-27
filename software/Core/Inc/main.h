@@ -54,12 +54,15 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void shutdown_interrupt();
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SHUTDOWN_STATUS_Pin GPIO_PIN_1
+#define SHUTDOWN_STATUS_GPIO_Port GPIOA
+#define SHUTDOWN_STATUS_EXTI_IRQn EXTI0_1_IRQn
 /* USER CODE BEGIN Private defines */
-
+#define UART_TIMEOUT 1000
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
