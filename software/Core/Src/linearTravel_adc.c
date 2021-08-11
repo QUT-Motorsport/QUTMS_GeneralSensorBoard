@@ -21,9 +21,8 @@ int count = 0;
 bool suspension_update = false;
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) {
-	memcpy(current_suspension_values.raw_suspension_value,
-			current_suspension_values.raw_suspension_value_dma,
-			sizeof(uint16_t) * NUM_SUSPENSION);
+	current_suspension_values.raw_suspension_value[0] = current_suspension_values.raw_suspension_value_dma[0];
+	current_suspension_values.raw_suspension_value[1] = current_suspension_values.raw_suspension_value_dma[1];
 }
 
 void setup_suspension_adc() {
@@ -67,6 +66,8 @@ void suspension_timer_cb(void *args) {
 				current_suspension_values.suspension_value[0].current_filtered,
 				current_suspension_values.suspension_value[1].current_filtered);
 
+		printf("A %d %d\r\n", current_suspension_values.suspension_value[0].current_filtered,
+				current_suspension_values.suspension_value[1].current_filtered);
 
 		CAN_TxHeaderTypeDef header = { .ExtId = msg.id,
 				.IDE = CAN_ID_EXT,
