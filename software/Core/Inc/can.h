@@ -41,9 +41,7 @@ void MX_CAN_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 void setup_CAN();
-
 extern uint32_t can_mailbox;
-
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

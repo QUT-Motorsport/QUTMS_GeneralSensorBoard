@@ -21,7 +21,7 @@ typedef struct suspension_values {
 	window_filter_t suspension_value[NUM_SUSPENSION];
 
 	uint16_t raw_suspension_value[NUM_SUSPENSION];
-	uint32_t raw_suspension_value_dma[NUM_SUSPENSION];
+	uint16_t raw_suspension_value_dma[NUM_SUSPENSION];
 } suspension_values_t;
 
 extern suspension_values_t current_suspension_values;

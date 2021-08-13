@@ -23,6 +23,7 @@
 /* USER CODE BEGIN 0 */
 #include <stdio.h>
 uint32_t can_mailbox;
+
 /* USER CODE END 0 */
 
 CAN_HandleTypeDef hcan;
@@ -39,7 +40,7 @@ void MX_CAN_Init(void)
 
   /* USER CODE END CAN_Init 1 */
   hcan.Instance = CAN;
-  hcan.Init.Prescaler = 2;
+  hcan.Init.Prescaler = 1;
   hcan.Init.Mode = CAN_MODE_NORMAL;
   hcan.Init.SyncJumpWidth = CAN_SJW_1TQ;
   hcan.Init.TimeSeg1 = CAN_BS1_13TQ;
@@ -151,7 +152,6 @@ void setup_CAN() {
 		printf("Failed to activate CAN2 notification on RX1");
 	}
 }
-
 /* USER CODE END 1 */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -8,7 +8,7 @@
 #include "main.h"
 #include "linearTravel_adc.h"
 #include "adc.h"
-
+#include "can.h"
 #include <General_Sensor_CAN_Messages.h>
 
 #include <stdio.h>
@@ -20,7 +20,8 @@ int count = 0;
 
 bool suspension_update = false;
 
-void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) {
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
+{
 	current_suspension_values.raw_suspension_value[0] = current_suspension_values.raw_suspension_value_dma[0];
 	current_suspension_values.raw_suspension_value[1] = current_suspension_values.raw_suspension_value_dma[1];
 }
@@ -30,9 +31,7 @@ void setup_suspension_adc() {
 	timer_suspension_adc = timer_init(10, true, suspension_timer_cb);
 
 	// start dma requests
-	HAL_ADC_Start_DMA(&hadc,
-			(uint32_t*) current_suspension_values.raw_suspension_value_dma,
-			NUM_SUSPENSION);
+	HAL_ADC_Start_DMA(&hadc, current_suspension_values.raw_suspension_value_dma,NUM_SUSPENSION);
 
 	// wait for first dma round
 	HAL_Delay(1);
@@ -49,6 +48,8 @@ void setup_suspension_adc() {
 }
 
 void suspension_timer_cb(void *args) {
+	HAL_ADC_Start_DMA(&hadc, current_suspension_values.raw_suspension_value_dma,NUM_SUSPENSION);
+
 	// update filter
 	for (int i = 0; i < NUM_SUSPENSION; i++) {
 		window_filter_update(&current_suspension_values.suspension_value[i],
@@ -76,6 +77,7 @@ void suspension_timer_cb(void *args) {
 				.TransmitGlobalTime = DISABLE };
 		HAL_CAN_AddTxMessage(&hcan, &header, msg.data,
 				&can_mailbox);
+
 
 	}
 }
