@@ -20,6 +20,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
+#include "can.h"
 #include "dma.h"
 #include "usart.h"
 #include "gpio.h"
@@ -28,6 +29,9 @@
 /* USER CODE BEGIN Includes */
 #include <string.h>
 #include <stdio.h>
+#include <sys/unistd.h>
+
+#include "linearTravel_adc.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,20 +62,27 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int d = 0;
-uint16_t adc_val[2];
-uint16_t adc_good[2];
-
-
-void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
-{
-    // Conversion Complete & DMA Transfer Complete As Well
-    // So The AD_RES Is Now Updated & Let's Move IT To The PWM CCR1
-    // Update The PWM Duty Cycle With Latest ADC Conversion Result
-	adc_good[0] = adc_val[0];
-	adc_good[1] = adc_val[1];
-
+#ifdef PRINTF_TO_UART
+/** Override _write to log to UART */
+int _write(int file, char *data, int len) {
+	if ((file != STDOUT_FILENO) && (file != STDERR_FILENO)) {
+		return -1;
+	}
+	HAL_StatusTypeDef s = HAL_UART_Transmit(&huart1, (uint8_t*) data, len,
+			100);
+	/*
+	 // log whatever we transmit to serial
+	 serial_log_t log_wrapper;
+	 memcpy(log_wrapper.data, data, len);
+	 log_wrapper.len = len;
+	 queue_add(&queue_serial_log, &log_wrapper);
+	 */
+	return (s == HAL_OK ? len : 0);
 }
+#endif
+
+
+
 /* USER CODE END 0 */
 
 /**
@@ -105,17 +116,15 @@ int main(void)
   MX_DMA_Init();
   MX_USART1_UART_Init();
   MX_ADC_Init();
+  MX_CAN_Init();
   /* USER CODE BEGIN 2 */
-  char data[80];
-  int i = 0;
-
-
-
-  sprintf(data, "start\r\n");
-  HAL_UART_Transmit(&huart1, (uint8_t*)data, strlen(data), 100);
+  printf("start\r\n");
+  setup_CAN();
+  setup_suspension_adc();
+  printf("fin init\r\n");
 
   //HAL_ADC_Start_DMA(&hadc, (uint32_t *)adc_buff, 2);
-
+  int i = 0;
 
   /* USER CODE END 2 */
 
@@ -128,17 +137,17 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 	  //HAL_ADC_Start(&hadc);
-      HAL_ADC_Start_DMA(&hadc, adc_val, 2);
+      //HAL_ADC_Start_DMA(&hadc, adc_val, 2);
 
 	         // Poll ADC1 Perihperal & TimeOut = 1mSec
 	          //HAL_ADC_PollForConversion(&hadc, 1);
 	         // Read The ADC Conversion Result & Map It To PWM DutyCycle
 	          //uint16_t adc_val = HAL_ADC_GetValue(&hadc);
+	timer_update(&timer_suspension_adc, NULL);
 
-	  sprintf(data, "%i %i %i\r\n", ++i, adc_good[0], adc_good[1]);
-	  HAL_UART_Transmit(&huart1, (uint8_t*)data, strlen(data), 100);
+	  //printf("%i %i %i\r\n", ++i, current_suspension_values.raw_suspension_value[0], current_suspension_values.raw_suspension_value[1]);
 
-	  HAL_Delay(100);
+	  //HAL_Delay(100);
   }
   /* USER CODE END 3 */
 }
