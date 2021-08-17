@@ -54,10 +54,13 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void shutdown_detect();
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SHDN_DETECT_Pin GPIO_PIN_1
+#define SHDN_DETECT_GPIO_Port GPIOA
+#define SHDN_DETECT_EXTI_IRQn EXTI0_1_IRQn
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

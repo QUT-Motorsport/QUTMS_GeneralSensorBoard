@@ -74,6 +74,8 @@
                                     <listOptionValue builtIn="false" value="PRINTF_TO_UART"/>
                                     									
                                     <listOptionValue builtIn="false" value="QUTMS_CAN_GENERAL_SENSOR"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="QUTMS_CAN_SHDN"/>
                                     								
                                 </option>
                                 								
@@ -334,5 +336,7 @@
         </scannerConfigBuildInfo>
         	
     </storageModule>
+    	
+    <storageModule moduleId="refreshScope"/>
     
 </cproject>
