@@ -117,6 +117,7 @@ int main(void) {
 	MX_CAN_Init();
 	/* USER CODE BEGIN 2 */
 	printf("start\r\n");
+	HAL_Delay(250);
 	setup_CAN();
 	setup_suspension_adc();
 	printf("fin init\r\n");
